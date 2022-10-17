@@ -1,11 +1,11 @@
-	.file	"0-main.c"
+	.file	"main.c"
 	.intel_syntax noprefix
 # GNU C17 (Ubuntu 9.4.0-1ubuntu1~20.04.1) version 9.4.0 (x86_64-linux-gnu)
 #	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
 
 # GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-# options passed:  -imultiarch x86_64-linux-gnu 0-main.c -masm=intel
-# -mtune=generic -march=x86-64 -auxbase-strip 0-main.s -Og -fverbose-asm
+# options passed:  -imultiarch x86_64-linux-gnu main.c -masm=intel
+# -mtune=generic -march=x86-64 -auxbase-strip main.s -Og -fverbose-asm
 # -fasynchronous-unwind-tables -fstack-protector-strong -Wformat
 # -Wformat-security -fstack-clash-protection -fcf-protection
 # options enabled:  -fPIC -fPIE -faggressive-loop-optimizations
@@ -50,7 +50,7 @@ main:
 .LFB23:
 	.cfi_startproc
 	endbr64	
-# 0-main.c:11: }
+# main.c:11: }
 	mov	eax, 0	#,
 	ret	
 	.cfi_endproc
