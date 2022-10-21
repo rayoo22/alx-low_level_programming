@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
  * main - check the code.
@@ -8,6 +8,11 @@
 
 int _isupper(int c)
 {
+	/**
+	 * to get the upper case
+	 *
+	 * and lower case
+	 */
 	if (c >= 'A' && c <= 'Z')
 	{
 		return (1);
