@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
- * main - Entry point
  *
- * Return: Always 0 (Succes)
+ * _isupper - checks for lowercase characters.
+ *@c: caracter recibo por main
+ * Return: 1 if c is uppercase
  */
 int _isupper(int c)
 {
@@ -11,7 +12,7 @@ int _isupper(int c)
 	{
 		return (1);
 	}
-	else if (c <=  'z')
+	else if (c <= 'z')
 	{
 		return (0);
 	}
