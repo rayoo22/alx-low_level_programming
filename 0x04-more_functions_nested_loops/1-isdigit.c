@@ -2,7 +2,7 @@
 
 /**
  * _isdigit - checks for alowercase character
- * @c: digit to be checked
+ * @c: caracter recibo por main
  * Retur: 1 if c is uppercase
  */
 
