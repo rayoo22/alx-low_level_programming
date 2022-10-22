@@ -1,21 +1,23 @@
 #include "main.h"
 
 /**
- * main - check the code.
+ * main - Entry point
  *
- * Return: Always 0.
+ * Return: Always 0 (Succes)
  */
-
 int _isupper(int c)
 {
-	/**
-	 * to get the upper case
-	 *
-	 * and lower case
-	 */
 	if (c >= 'A' && c <= 'Z')
 	{
 		return (1);
 	}
-	return (0);
+	else if (c <=  'z')
+	{
+		return (0);
+	}
+	else
+	{
+		return (0);
+	}
+
 }
