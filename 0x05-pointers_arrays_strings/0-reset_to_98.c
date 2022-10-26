@@ -1,6 +1,7 @@
 #include "main.h"
 
-/** reset_to_98 - function to run
+/**
+ * reset_to_98 - function to run
  * @n: Pointer with the address value.
  *
  * Description: This function takes a pointer to an int as parameter and
