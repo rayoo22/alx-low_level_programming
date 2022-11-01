@@ -8,7 +8,6 @@
  * @b: a characer.
  * @n: This is the number of bytes to be set to the value.
  *
- * Description: this code fills memory with a constant byte.
  *
  * Return: 0.
  */
