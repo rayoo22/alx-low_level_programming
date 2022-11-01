@@ -7,7 +7,7 @@
  * @s: this is a pointer.
  * @accept: string containing list of characters.
  *
- * Return - number of bytes in the initial segment.
+ * Return: number of bytes in the initial segment.
  */
 
 unsigned int _strspn(char *s, char *accept)
