@@ -8,7 +8,6 @@
  */
 int _abs(int j)
 {
-	int j;
 	int i;
 
 	i = abs(j);
