@@ -3,10 +3,10 @@
 
 /**
  * _abs - the main function.
- * @int: empty parameter.
+ * @j: empty parameter.
  * Return: 0.
  */
-int _abs(int)
+int _abs(int j)
 {
 	int j;
 	int i;
