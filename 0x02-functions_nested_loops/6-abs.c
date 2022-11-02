@@ -11,7 +11,11 @@ int _abs(int j)
 	int i;
 
 	i = abs(j);
-	_putchar(i);
+
+	if (i < 0)
+	{
+
+	}
 
 	return (0);
 }
