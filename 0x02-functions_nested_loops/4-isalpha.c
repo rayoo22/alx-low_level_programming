@@ -2,7 +2,7 @@
 #include <ctype.h>
 
 /**
- * isalpha - the main function.
+ * _isalpha - the main function.
  * @c: a variable.
  *
  * Return: 1 if lowercase, 0 if otherwise.
