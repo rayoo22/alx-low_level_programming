@@ -3,6 +3,7 @@
 
 /**
  * _islower - the main function
+ * @c: a variable
  *
  * Return: 1 if lowercase, 0 if otherwise.
  */
