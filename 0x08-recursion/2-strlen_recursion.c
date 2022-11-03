@@ -10,7 +10,11 @@
  */
 int _strlen_recursion(char *s)
 {
-	printf("%ld", strlen(s));
+	int len;
+
+	len = strlen(s);
+
+	printf("%dd", len);
 
 	return (0);
 }
