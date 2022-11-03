@@ -13,7 +13,7 @@ int _pow_recursion(int x, int y)
 	if (y < 0)
 		return (-1);
 
-	printf("%f", pow((double) x, (double) y));
+	printf("%lf", pow((double) x, (double) y));
 
 	return (0);
 }
