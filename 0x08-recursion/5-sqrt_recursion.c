@@ -10,6 +10,8 @@
  */
 int _sqrt_recursion(int n)
 {
+	double m;
+
 	m = (double) n;
 
 	if (n < 0)
