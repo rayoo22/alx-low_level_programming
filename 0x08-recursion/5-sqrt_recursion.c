@@ -20,7 +20,7 @@ int _sqrt_recursion(int n)
 	if (n == 0 || n == 1)
 		return (1);
 
-	printf("%f", sqrt(m));
+	printf("%lf", sqrt(m));
 
 	return (0);
 }
