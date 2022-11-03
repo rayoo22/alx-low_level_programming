@@ -1,5 +1,6 @@
 #include "main.h"
 #include <math.h>
+#include <stdio.h>
 
 /**
  * _pow_recursion - the main function
@@ -12,7 +13,7 @@ int _pow_recursion(int x, int y)
 	if (y < 0)
 		return (-1);
 
-	printf("%d", pow(x, y));
+	printf("%f", pow(x, y));
 
 	return (0);
 }
