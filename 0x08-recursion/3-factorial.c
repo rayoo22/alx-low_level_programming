@@ -5,7 +5,7 @@
  * factorial - the main function
  * @n: a variable for the function
  *
- * Return - -1 if less than 0.
+ * Return: -1 if less than 0.
  */
 
 int factorial(int n)
