@@ -21,4 +21,6 @@ int _pow_recursion(int x, int y)
 	res = pow (x, y);
 
 	printf("%d", res);
+
+	return (0);
 }
