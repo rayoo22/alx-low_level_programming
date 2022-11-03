@@ -1,6 +1,30 @@
 #include "main.h"
-#include <stdio.h>
-#include <math.h>
+/**
+ * sqtRecursive - computes square root recursively doing binary search
+ * @start: initial number
+ * @end: last number within the limit of number
+ * @m: given number
+ * Return: 1 if not found sqrroot, else sqrroot
+ */
+
+int sqtRecursive(int start, int end, int m)
+{
+	long mid;
+
+	if (end >= start)
+	{
+		mid = start + (end - start) / 2;
+		if (mid * mid == m)
+			return (mid);
+		
+		/* following binary search */
+		if (mid * mid > m)
+			return (sqtRecursive(start, mid - 1, m));
+		if (mid * mid < m)
+			return (sqtRecursive(mid + 1, end, m));
+	}
+	return (-1);
+}
 
 /**
  * _sqrt_recursion - the main function
@@ -10,17 +34,11 @@
  */
 int _sqrt_recursion(int n)
 {
-	double m;
-
-	m = (double) n;
-
 	if (n < 0)
 		return (-1);
 
 	if (n == 0 || n == 1)
 		return (1);
 
-	printf("%lf", sqrt(m));
-
-	return (0);
+	return (sqtRecursive(2, n, n));
 }
