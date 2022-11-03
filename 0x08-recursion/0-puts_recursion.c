@@ -5,7 +5,7 @@
 /**
  * _puts_recursion - the main function.
  * @s: the pointer to the string
- * @c: variable with the string
+ *
  * Return: 0.
  */
 void _puts_recursion(char *s)
