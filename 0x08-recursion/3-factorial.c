@@ -20,7 +20,5 @@ int factorial(int n)
 		return (1);
 	}
 
-	printf(factorial(n - 1) + factorial(n - 2));
-
-	return (0);
+	return (factorial(n - 1) + factorial(n - 2));
 }
