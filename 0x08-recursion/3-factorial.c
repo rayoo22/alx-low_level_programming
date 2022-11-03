@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * factorial - the main function
@@ -19,7 +20,7 @@ int factorial(int n)
 		return (1);
 	}
 
-	_putchar(factorial(n - 1) + factorial(n - 2));
+	printf(factorial(n - 1) + factorial(n - 2));
 
 	return (0);
 }
