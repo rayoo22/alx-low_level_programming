@@ -10,5 +10,9 @@
  */
 void _print_rev_recursion(char *s)
 {
-	puts(strrev(s));
+	char c;
+
+	c = strrev(s);
+
+	puts(c);
 }
