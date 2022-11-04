@@ -1,2 +1,1 @@
-l
-inters arrays and strings
+A readme file for pointers arrays and strings
