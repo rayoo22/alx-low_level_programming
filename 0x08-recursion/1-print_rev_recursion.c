@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _puts_rev_recursion - the main function
+ * _print_rev_recursion - the main function
  * @s: pointer to a string variable
  *
  * Return: 0
