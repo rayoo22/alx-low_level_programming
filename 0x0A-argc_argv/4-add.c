@@ -3,27 +3,26 @@
 
 /**
  * main - the main function
- * @argc: the number of arguments.
+ * @argc: the number of compiled arguments
  * @argv: array of compiled arguments
  * Return: 0.
  */
 int main(int argc, char *argv[])
 {
 	int i;
-	int mul = 1;
+	int add;
 
 	if (argc <= 1)
 	{
-		printf("Error\n");
-		return (1);
+		printf("%d\n", 0);
 	}
-	else if (argc > 1)
+	else
 	{
 		for (i = 1; i < argc; i++)
 		{
-			mul *= atoi(argv[i]);
+			add += atoi(argv[i]);
 		}
-		printf("%d\n", mul);
+		printf("%d\n", add);
 	}
 	return (0);
 }
