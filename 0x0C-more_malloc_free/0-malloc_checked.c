@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdlib.h>
+#include <stddef.h>
 
 /**
  * malloc_checked - the main function
@@ -7,11 +9,13 @@
  */
 void *malloc_checked(unsigned int b)
 {
-	int *tab;
+	void *tab;
 
-	tab = malloc(sizeof(int));
+	tab = malloc(b);
 	if (tab == NULL)
 	{
-		_putchar(98);
+		exit(98);
 	}
+
+	return (*tab);
 }
