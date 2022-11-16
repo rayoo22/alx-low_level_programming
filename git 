@@ -1,0 +1,18 @@
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch master
+# Your branch is ahead of 'origin/master' by 1 commit.
+#   (use "git push" to publish your local commits)
+#
+# Changes to be committed:
+#	modified:   ../0x04-more_functions_nested_loops/5-more_numbers.c
+#	modified:   ../0x05-pointers_arrays_strings/7-puts_half.c
+#
+# Untracked files:
+#	../0x01-variables_if_else_while/.main.h.swp
+#	../0x01-variables_if_else_while/main.h
+#	../0x04-more_functions_nested_loops/5-main.c
+#	../0x04-more_functions_nested_loops/5-more_numbers
+#

@@ -1,22 +1,24 @@
 #include "main.h"
 
 /**
- * more numbers - print 0 to 14 ten times
+ * more_numbers - function to be called
+ * @n: first member
+ * @m: second member
+ *
  */
-
 void more_numbers(void)
 {
-	char i;
-	int counter;
+	int n = 0, m;
 
-	for (counter = 1; counter <= 10; counter++)
+	while (n <= 10)
 	{
-		for (i = 0; i <= 14; i++)
+		m = 0;
+		while (m <= 14)
 		{
-			if (i / 10 > 0)
-				_putchar((i / 10) + '0');
-			_putchar((i % 10) + '0');
+			_putchar(m);
+			m++;
 		}
 		_putchar('\n');
+		n++;
 	}
 }

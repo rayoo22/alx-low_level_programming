@@ -9,8 +9,9 @@
  */
 void puts_half( char *str)
 {
-	int n;
+	int a;
 	int i;
+
 
 	while (str[n])
 	{
