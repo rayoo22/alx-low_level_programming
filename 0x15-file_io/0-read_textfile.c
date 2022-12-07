@@ -8,14 +8,13 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int fd; /* file descriptor */
+	int fd;
 	ssize_t n_read, n_wrote;
 	char *buffer;
 
 	if (filename == NULL)
 		return (0);
 
-	/*open*/
 	fd = open(filename, O_RDONLY);
 	if (fd == -1)
 		return (0);
