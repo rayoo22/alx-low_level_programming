@@ -8,10 +8,10 @@ int main(void)
 {
 	int i = 122;
 
-	while (i< 96)
+	while (i > 96)
 	{
 		putchar(i);
-		i++;
+		i--;
 	}
 	putchar(10);
 

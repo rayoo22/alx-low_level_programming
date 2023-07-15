@@ -10,9 +10,9 @@ int main(void)
 
 	i = 0;
 
-	while (i < 10)
+	while (i < 48)
 	{
-		if (i< 10)
+		if (i < 10)
 			putchar(1 + '0');
 		else if (i > 41)
 			putchar(i - 10 + 'A');
