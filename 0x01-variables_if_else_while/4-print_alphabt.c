@@ -2,21 +2,21 @@
 /**
  * main - Entry point
  * Description: prints lettersexcept e and q
- * Return:0\
+ * Return: 0
  */
 int main(void)
 {
-	int lower = 97;
+	int lower = 'a';
 
-	while (lower < 123)
+	while (lower < 'z')
 	{
-		if (lower != 101 && lower != 113)
+		if (lower != 'e' && lower != 'q')
 		{
 			putchar(lower);
 		}
 		lower++;
 	}
-	putchar(10);
+	putchar('\n');
 
 	return (0);
 }
