@@ -2,13 +2,13 @@
 /**
  * print_line - main entry
  * @n: variable in use
- * Descriptions: draws a straight line in terminal
+ * Description: draws a straight line in terminal
  * Return: 0
  */
 void print_line(int n)
 {
 	int i;
-	
+
 	i = 1;
 
 	while (i <= n)
