@@ -1,0 +1,19 @@
+#include "main.h"
+/**
+ * print_numbers - entry point
+ * Description: prints numbers from 0 to 9, then new line
+ * Return: 0
+ */
+void print_numbers(void)
+{
+	int i;
+	
+	i = 0;
+
+	while (i < 10)
+	{
+		_putchar(i);
+		i++;
+	}
+	_putchar('\n');
+}
