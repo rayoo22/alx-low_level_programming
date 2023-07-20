@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * _isdigit - entry oint
+ * _isdigit - entry point
  * @c: variable to be used
  * Description: checks for a digit
- * Return 1 if digit, 0 if otherwise
+ * Return: 1 if digit, 0 if otherwise
  */
 int _isdigit(int c)
 {
