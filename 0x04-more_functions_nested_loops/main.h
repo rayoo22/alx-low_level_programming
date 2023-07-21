@@ -3,6 +3,7 @@
 
 #include <stdio.h>
 #include <ctype.h>
+#include <math.h>
 
 int _putchar(char c);
 int _isupper(int c);
