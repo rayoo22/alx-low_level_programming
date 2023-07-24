@@ -10,5 +10,6 @@ int _strlen(char *s);
 void _puts(char *str);
 void print_rev(char *s);
 void puts_half(char *str);
+int _putchar(char *s);
 
 #endif
