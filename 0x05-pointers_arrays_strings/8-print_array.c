@@ -10,8 +10,14 @@ void print_array(int *a, int n)
 {
 	int i;
 
-	while (i < len(n - 1))
+	for (i = 0; i < (n - 1); i++)
 	{
-		printf(
+		printf("%d, "a[i]);
 	}
+
+	if (i == (n - 1))
+	{
+		printf("%d", a[n - 1]);
+	}
+	printf("\n");
 }
