@@ -6,14 +6,10 @@
  */
 void puts2(char *str)
 {
-	int i;
-	int t;
-	char *y;
+	int i = 0;
+	int t = 0;
+	char *y = str;
 	int j;
-
-	i = 0;
-	t = 0;
-	*y = str;
 
 	while (*y != '\0')
 	{
