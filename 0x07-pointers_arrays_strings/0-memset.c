@@ -1,9 +1,9 @@
 #include "main.h"
 /**
  * _memset - main function
- * @s:
- * @b:
- * @n:
+ * @s: pointer of the memory location where the memory will be set
+ * @b: value that is to be copied to the memory block
+ * @n: number of bytes in the memory block which is set
  * Description:
  * Return: 0
  */
