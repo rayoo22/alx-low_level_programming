@@ -2,6 +2,7 @@
 /**
  * print_chessboard - main entry point
  * @a: character pointer of array size 8
+ * Description: prints the chessboard
  * Return: 0
  */
 
