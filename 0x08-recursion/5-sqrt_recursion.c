@@ -1,7 +1,7 @@
 #include "main.h"
 
 int actual_sqrt_recurs(int n, int i);
-
+e
 /**
  * _sqrt_recursion - natural square root of a number.
  * @n: number to undergo square root
@@ -13,7 +13,7 @@ int _sqrt_recursion(int n)
 	{
 		return (-1);
 	}
-	return (actual_sqrt_recurs(n ,0));
+	return (actual_sqrt_recurs(n, 0));
 }
 
 /**
