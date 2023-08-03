@@ -6,5 +6,12 @@
  */
 int _sqrt_recursion(int n)
 {
-	if (
+	if (sqrt(n))
+	{
+		return (sqrt(n));
+	}
+	else
+	{
+		return (-1);
+	}
 }
