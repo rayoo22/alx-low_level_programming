@@ -3,9 +3,9 @@
 int the_prime(int n, int i);
 
 /**
- * is_prime_number - returns 1 if the input integer is a prime number, otherwise return 0
+ * is_prime_number - evaluates to check if input is prime
  * @n: number to check if is a prime number
- * Return: 0
+ * Return: 1 if int is prime, otherwise 0
  */
 int is_prime_number(int n)
 {
