@@ -9,7 +9,7 @@ char *str_concat(char *s1, char *s2)
 {
 	char *sol;
 
-	sol = malloc(s1 + s2);
+	sol = malloc(sizeof(s1) + sizeof(s2));
 
 	strcat(s1, s2);
 
