@@ -11,7 +11,6 @@
  * @owner: third member
  * Description: a structure of a dog
  */
-
 struct dog{
 	char *name;
 	float age;
