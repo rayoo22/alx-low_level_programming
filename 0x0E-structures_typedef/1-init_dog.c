@@ -6,9 +6,13 @@
  * @name: second member
  * @age: third member
  * @owner: fourth member
- * Desecription: initializes a variable of type struct dog
+ * Description: initializes a variable of type struct dog
  */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	dog *d = {name, age, owner};
+	if (d == NULL)
+		d = malloc(sizeof(struct dog));
+	d->name = name
+	d->age = age;
+	d->owner = owner;
 }
