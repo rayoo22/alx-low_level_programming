@@ -7,7 +7,6 @@
  */
 size_t print_list(const list_t *h)
 {
-	h = head;
 	size_t num = 0;
 
 	if ((h->str) == NULL)
