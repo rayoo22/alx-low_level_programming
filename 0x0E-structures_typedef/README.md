@@ -1,1 +1,0 @@
-for structeres, typedef
