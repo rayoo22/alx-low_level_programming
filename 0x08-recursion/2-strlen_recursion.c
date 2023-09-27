@@ -9,5 +9,5 @@ int _strlen_recursion(char *s)
 
 	length = strlen(s);
 
-	printf("%d", length);
+	return (length);
 }
