@@ -5,21 +5,20 @@
  */
 void _print_rev_recursion(char *s)
 {
+	int i;
+	int j;
+	char c;
+
 	if (!s)
 	{
 		return;
 	}
-
-	int i;
-	int j;
 	
 	i = 0;	
 	j = strlen(s) - 1;
 
 	while (i < j)
 	{
-		char c;
-
 		c = s[i];
 		s[i] = s[j];
 		s[j] = c;
