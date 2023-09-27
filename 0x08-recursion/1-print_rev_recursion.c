@@ -5,5 +5,20 @@
  */
 void _print_rev_recursion(char *s)
 {
-	printf(strrev(s));
+	if (!s)
+	{
+		return;
+	}
+
+	int i = 0;
+	int j = strlen(s) - 1;
+
+	while (i < j)
+	{
+		char c = s[i];
+		s[i] = s[j];
+		s[j] = c;
+		i++;
+		j--;
+	}
 }
