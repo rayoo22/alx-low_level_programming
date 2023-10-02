@@ -17,12 +17,12 @@ char *create_array(unsigned int, char c)
 		return (NULL);
 	}
 
-	arr = ,alloc(sizeof(char) * size); /* allocate memory */
+	arr = malloc(sizeof(char) * size); /* allocate memory */
 
 	if (arr == NULL) /* VALIDATE MEMORY */
 		return (NULL);
 
-	while (i < int(size) /* set array values to char c */
+	while (i < int(size)) /* set array values to char c */
 	{
 		*(arr + i) = c;
 		i++;
