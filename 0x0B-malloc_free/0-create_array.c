@@ -22,13 +22,13 @@ char *create_array(unsigned int size, char c)
 	if (arr == NULL) /* VALIDATE MEMORY */
 		return (NULL);
 
-	while (i < int(size)) /* set array values to char c */
+	while (i < (int)size) /* set array values to char c */
 	{
 		*(arr + i) = c;
 		i++;
 	}
 
-	*a(arr + i) = '\0';
+	*(arr + i) = '\0';
 
-	return (char);
+	return (arr);
 }
