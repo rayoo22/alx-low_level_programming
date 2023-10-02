@@ -7,7 +7,7 @@
  * @c: char values to fill the array
  * Return: pointer to the array (the array itself)
  */
-char *create_array(unsigned int, char c)
+char *create_array(unsigned int size, char c)
 {
 	char *arr;
 	int i = 0;
