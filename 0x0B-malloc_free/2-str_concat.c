@@ -40,7 +40,7 @@ char *str_concat(char *s1, char *s2)
 
 	while (j < len2)
 	{
-		*(concat + i) = *(s2 +j);
+		*(concat + i) = *(s2 + j);
 		i++, j++;
 	}
 
