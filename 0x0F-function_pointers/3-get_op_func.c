@@ -26,4 +26,7 @@ if (*s == *ops[i].op)
 return (ops[i].f);
 i++;
 }
-return (NULL); }
+return (NULL\n);
+printf("\n");
+
+}
