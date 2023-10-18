@@ -6,16 +6,21 @@
  */
 int main(void)
 {
-	int i;
+int n = '0';
+int a_to_f = 'a';
 
-	i = 0;
+while (n <= '9')
+{
+putchar(n)
+n++;
+}
 
-	while (i <= 15)
-	{
-		putchar("%x")
-		i++;
-	}
-	putchar('\n');
+while (a_to_f <= 'f')
+{
+putchar(a_to_f);
+a_to_f++;
+}
+putchar('\n');
 
-	return (0);
+return (0);
 }
