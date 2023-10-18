@@ -41,7 +41,7 @@ if (s == NULL)
 printf("(nil)");
 return;
 }
-printf("%s, s");
+printf("%s", s);
 }
 
 /**
@@ -56,7 +56,7 @@ char *separator = "";
 int i, j = 0;
 va_list valist;
 
-datatype choice [] = { {'c', print_char},
+datatype choice[] = { {'c', print_char},
 {'i', print_int}, {'f', print_float}, {'s', print_string},
 {'\0', NULL}
 };
@@ -67,7 +67,6 @@ while (format != NULL && format[j] != '\0')
 i = 0;
 while (choice[i].letter != '\0')
 {
-i = 0;
 if (choice[i].letter == format[j])
 {
 printf("%s", separator);
