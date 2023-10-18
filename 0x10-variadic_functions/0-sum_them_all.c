@@ -1,4 +1,3 @@
-#include <stdarg.h>
 #include "variadic_functions"
 /**
  * sum_them_all - return sum when given any no. of arguments
