@@ -1,4 +1,4 @@
-#include "variadic_functions"
+#include "variadic_functions.h"
 /**
  * sum_them_all - return sum when given any no. of arguments
  * @n: integers to add
@@ -13,6 +13,7 @@ if (n == 0)
 {
 return (0);
 }
+va_start(valist, n);
 
 for (i = 0; i < n; i++)
 {
