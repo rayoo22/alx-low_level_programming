@@ -39,7 +39,7 @@ s = va_arg(valist, char *);
 if (s == NULL)
 {
 printf("(nil)");
-return;
+return ;
 }
 printf("%s", s);
 }
