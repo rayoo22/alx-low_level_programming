@@ -9,32 +9,33 @@
  */
 char *_strdup(char *str)
 {
-	char *dup_str;
-	int i = 0;
-	int len = 0;
+char *duplicate_str;
+int i = 0, len = 0;
 
-	if (str == NULL) /* validate str input */
-	{
-		return (NULL);
-	}
+if (str == NULL)
+{
+return (NULL);
+}
 
-	while (*(str + 1))
-	{
-		len++, i++;
-	}
-	len++;
+while (*(str + i))
+{
+len++, i++;
+}
+len++;
 
-	dup_str = malloc(sizeof(char) * len);
+duplicate_str = malloc(sizeof(char) * len);
 
-	if (dup_str == NULL)
-		return (NULL);
+if (duplicate_str == NULL)
+{
+return (NULL);
+}
+i = 0;
 
-	i = 0;
-	while (i < len)
-	{
-		*(dup_str + i) = *(str + i);
-		i++;
-	}
+while (i < len)
+{
+*(duplicate_str + i) = *(str + i);
+i++;
+}
 
-	return (dup_str);
+return (duplicate_str);
 }
