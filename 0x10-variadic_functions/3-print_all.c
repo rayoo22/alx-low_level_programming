@@ -46,9 +46,9 @@ printf("%s", s);
 
 /**
  * print_all - prints varying input of ints,
- chars, floats, strings
+   chars, floats, strings
  * @format: an array of chars signifying which data
- type to print
+   type to print
 */
 void print_all(const char * const format, ...)
 {
@@ -56,8 +56,11 @@ char *separator = "";
 int i, j = 0;
 va_list valist;
 
-datatype choice[] = { {'c', print_char},
-{'i', print_int}, {'f', print_float}, {'s', print_string},
+datatype choice[] = {
+{'c', print_char},
+{'i', print_int},
+{'f', print_float},
+{'s', print_string},
 {'\0', NULL}
 };
 
