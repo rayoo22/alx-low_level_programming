@@ -9,11 +9,11 @@
 */
 int len(char *str)
 {
-        int i;
+int i;
 
-        for (i = 0; *(str + i); i++)
-                ;
-        return (i);
+for (i = 0; *(str + i); i++)
+;
+return (i);
 }
 
 /**
@@ -24,44 +24,66 @@ int len(char *str)
 */
 char *strcpy(char *dest, char *src)
 {
-        int i;
+int i;
 
-        for (i = 0; i <= len(src); i++)
-        {
-                dest[i] = src[i];
-        }
+for (i = 0; i <= len(src); i++)
+{
+dest[i] = src[i];
+}
 
-        return (dest);
+return (dest);
 }
 
 /**
 * new_dog - create new instance of struct dog
 * @name: member
+* @age: member
 * @owner: member
 * Return: initialized instance of struct dog
 */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-        dog_t *dog1;
-        char *copy_of_name;
-        char *copy_of_owner;
+dog_t *dog1;
+char *copy_of_name;
+char *copy_of_owner;
 
-        dog1 = malloc(sizeof(dog_t));
-        if (dog1 == NULL)
-        {
-                return (NULL);
-        }
-        
-        dog->age = age;
+dog1 = malloc(sizeof(dog_t));
+if (dog1 == NULL)
+{
+return (NULL);
+}
 
-        if (name != NULL)
-        {
-                copy_of_name = malloc(len(name) + 1);
-                if (copy_of_name == NULL)
-                {
-                        free(dog1);
-                        return (NULL);
-                }
-                dog1->name = strcpy(copy_of_name, name);
-        }
+dog->age = age;
+
+if (name != NULL)
+{
+copy_of_name = malloc(len(name) + 1);
+if (copy_of_name == NULL)
+{
+free(dog1);
+return (NULL);
+}
+dog1->name = strcpy(copy_of_name, name);
+}
+else
+{
+dog1->name = NULL;
+
+if (owner != NULL)
+{
+copy_of_owner = malloc(len(owner) + 1);
+if (copy_of_owner == NULL)
+{
+free(copy_of_name);
+free(dog1);
+return(NULL);
+}
+dog->owner = strcpy(copy_of_owner, owner);
+}
+else
+{
+dog1->owner = NULL;
+}
+return (dog1);
+}
 }
