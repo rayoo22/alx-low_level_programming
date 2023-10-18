@@ -6,22 +6,23 @@
  */
 int main(void)
 {
-	int i, j;
+int ones, tens;
 
-	i = 48;
-	j = 48;
+for (tens = '0'; tens <= '9'; tens++)
+{
+for (ones = (tens + 1); ones <= '9'; ones++)
+{
+putchar(tens);
+putchar(ones);
 
-	while (i < 58)
-	{
-		j = i + 1;
-		while (j < 58)
-		{
-			putchar(i);
-			putchar(j);
+if (tens != '8' || ones != '9')
+{
+putchar(',');
+putchar(' ');
+}
+}
+}
+putchar('\n');
 
-			if 
-		}
-		j++;
-	}
-	i++;
+return (0);
 }
