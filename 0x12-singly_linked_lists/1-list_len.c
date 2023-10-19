@@ -11,7 +11,7 @@ size_t count = 0;
 while (h != NULL) /* if a node does not exist */
 {
 count++;
-h->next;
+h = h->next;
 }
 return (count);
 }
