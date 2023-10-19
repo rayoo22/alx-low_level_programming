@@ -1,4 +1,4 @@
-#include "list.h"
+#include "lists.h"
 
 /**
  * print_list - prints all elements of list_t
@@ -7,13 +7,11 @@
 */
 size_t print_list(const list_t *h)
 {
-list_t *temp = h;
-
-while (temp != NULL)
+while (h != NULL)
 {
-printf("%c", temp->str);
-printf("%u", temp->len);
-temp = temp->next;
+printf("%c", h->str);
+printf("%u", h->len);
+h = h->next;
 }
 
 }
