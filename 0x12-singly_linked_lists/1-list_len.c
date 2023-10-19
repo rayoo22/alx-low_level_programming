@@ -1,17 +1,17 @@
 #include "lists.h"
 /**
  * list_len - number of elements in a linked list_t list
- * @h: head node
+ * @h: the linked list
  * Returns: number of elements of the linked lists
 */
 size_t list_len(const list_t *h)
 {
 size_t count = 0;
 
-while (h->next != NULL)
+while (h != NULL) /* if a node does not exist */
 {
-h->next;
 count++;
+h->next;
 }
 return (count);
 }
