@@ -3,7 +3,7 @@
  * free_list - frees memory occupied by linked list
  * @head: linked list
 */
-void free_list(list_t * head)
+void free_list(list_t *head)
 {
 while (head != NULL)
 {
