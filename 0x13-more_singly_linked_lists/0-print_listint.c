@@ -4,7 +4,7 @@
  * @h: linked list
  * Return: number of nodes
 */
-size_t print_listint(const listint *h)
+size_t print_listint(const listint_t *h)
 {
 size_t num_nodes = 0;
 
