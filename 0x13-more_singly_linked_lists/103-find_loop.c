@@ -18,7 +18,7 @@ while (slow && fast && fast->next)
 {
 fast = fast->next->next;
 slow = slow->next;
-if (fast ==slow)
+if (fast == slow)
 {
 slow = head;
 while (slow != fast)
