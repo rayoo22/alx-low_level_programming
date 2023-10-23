@@ -16,6 +16,6 @@ while (*head != NULL)
 {
 ptr = *head;
 *head = ptr->next;
-free(ptr); 
+free(ptr);
 }
 }
