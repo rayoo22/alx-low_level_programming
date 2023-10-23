@@ -1,7 +1,7 @@
 #include "lists.h"
 /**
  * sum_listint - return sum of a data in linked list
- * @head: pointer to head pointer 
+ * @head: pointer to head pointer
  * Return: sum, or 0 if list is empty
 */
 int sum_listint(listint_t *head)
