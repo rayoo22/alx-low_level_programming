@@ -6,24 +6,27 @@
 */
 listint_t *find_listint_loop(listint_t *head)
 {
-listint_t *turtle, *hare;
+listint_t *slow = head;
+listint_t *fast = head;
 
-turtle = hare = head;
-
-while (turtle != NULL && hare != NULL)
+if (!head)
 {
-turtle = turtle->next;
-hare = hare->next->next;
-
-if (turtle == hare)
-{
-turtle = head;
-while (turle != hare)
-{
-turtle = turtle->next;
-hare = hare->next;
+return (NULL);
 }
-return (turtle);
+
+while (slow && fast && fast->next)
+{
+fast = fast->next->next;
+slow = slow->next;
+if (fast ==slow)
+{
+slow = head;
+while (slow != fast)
+{
+slow = slow->next;
+fast = fast->next;
+}
+return (fast);
 }
 }
 return (NULL);
