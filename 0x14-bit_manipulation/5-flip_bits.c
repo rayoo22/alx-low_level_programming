@@ -12,7 +12,7 @@ unsigned long int difference;
 
 difference = n ^ m;
 
-do{
+do {
 diff_bits += (difference & 1);
 difference >>= 1;
 } while
