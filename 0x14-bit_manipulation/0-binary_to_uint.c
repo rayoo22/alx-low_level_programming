@@ -12,7 +12,7 @@ unsigned int sum = 0;
 
 if (b == NULL)
 {
-return (NULL);
+return (sum);
 }
 while (b[len] != '\0')
 {
