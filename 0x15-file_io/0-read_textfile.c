@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *read_textfile - reads a certain size and prints to stdout
+ * read_textfile - reads a certain size and prints to stdout
  * @filename: file to read
  * @letters: size to read
  * Return: actual size read and printed
@@ -22,7 +22,7 @@ if (fd == -1)
 return (0);
 }
 
-buffer = malloc(sizeof(char) * letters);;
+buffer = malloc(sizeof(char) * letters);
 if (buffer == NULL)
 {
 returns (0);
