@@ -1,29 +1,41 @@
 #include "main.h"
+
+char *creat_buffer(char *file);
+void close_file(int fd);
+
 /**
- * __exit - prints error messages, and exits
- * @error: num is either exit value of file descriptor
- * @s: str is a name
- * @fd: file descriptor
- * Return: 0 on succes
+ * create_buffer - allocates 1024 bytes for a buffer
+ * @file: the name of the file buffer is storing chars
+ * Return: a pointer to the newly allocated buffer
 */
-int __exit(int error, char *s, int fd)
+char *create_buffer(char *file)
 {
-switch (error)
+char *buffer;
+
+buffer = malloc(sizeof(char) * 1024);
+
+if (buffer == NULL)
 {
-case 97:
-dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
-exit(error);
-case 98:
-dprintf(STDERR_FILENO, "Error: Can't read fromm file %s\n", s);
-exit(error);
-case 99:
-dprintf(STDERR_FILENO, "Error: Can't write to %s\n", s);
-exit(error);
-case 100:
+dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file);
+exit(98);
+}
+return (buffer);
+}
+
+/**
+ * close_file - closes file descriptors
+  * @fd: the file decriptor to be closed
+*/
+void close_file(int fd)
+{
+int c;
+
+c = close(fd);
+
+if (c == -1)
+{
 dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
-exit(error);
-default:
-return (0);
+exit(100);
 }
 }
 
@@ -35,40 +47,42 @@ return (0);
 */
 int main(int argc, char *argv[])
 {
-int fd_1, fd_2, n_read, n_wrote;
-char *buffer[1024];
+int from, to, r, w;
+char *buffer;
 
 if (argc != 3)
 {
-__exit(97, NULL, 0);
+dprintf(STDERR_FILENO, "Usage: cp fie_from file_to\n");
+exit(97);
+}
+buffer = create_buffer(argv[2]);
+from = open(argv[1], O_RDONLY);
+r = read(from, buffer, 1024);
+to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
+
+do
+{
+if (from == -1 || r == -1)
+{
+dprintf(STDERR_FILENO, "Error: Cn't read from file %s\n", argv[1]);
+free(buffer);
+exit(98);
 }
 
-fd_2 = open(argv[2], O_CREAT | O_TRUNC | O_WRONLY, 0664);
-if (fd_2 == -1)
+w = write(to, buffer, r);
+if (to == -1 || w == -1)
 {
-__exit(99, argv[2], 0);
+dprintf(STDERR_FILENO, "Can't write to %s\n", argv[2]);
+free(buffer);
+exit(99);
 }
+r = read(from, buffer, 1024);
+to = open(argv[2], O_WRONLY | O_APPEND);
+} while (r > 0);
 
-fd_1 = open(argv[1], O_RDONLY);
-if (fd_1 == -1)
-{
-__exit(98, argv[1], 0);
-}
+free(buffer);
+close_file(from);
+close_file(to);
 
-while  ((n_read = read(fd_1, buffer, 1024)) != 0)
-{
-if (n_read == -1)
-{
-__exits(98, argv[1], 0);
-}
-n_wrote = write(fd_2, buffer, n_read);
-if (n_wrote == -1)
-{
-__exit(99, argv[2], 0);
-}
-}
-
-close(fd_2) == -1 ? (__exit(100, NULL, fd_2)) : close(fd_2);
-close(fd_1) == -1 ? (__exit(100, NULL, fd_1)) : close(fd_1);
 return (0);
 }
