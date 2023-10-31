@@ -29,7 +29,7 @@ return (0);
 
 /**
  * main - copies one file to another
- * argc: argument counter
+ * @argc: argument counter
  * @argv: array of arguments
  * Return: 0 success
 */
