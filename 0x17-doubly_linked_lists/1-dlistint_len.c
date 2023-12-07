@@ -1,6 +1,6 @@
 #include "lists.h"
 #include <stdio.h>
-#include <stdlib>
+#include <stdlib.h>
 
 /**
  * dlistint_len - returns the number of elements in list
@@ -9,11 +9,8 @@
  */
 size_t dlistint_len(const dlistint_t *h)
 {
-	size_t count;
-	dlistint_t *ptr;
-	
-	count = 0;
-	ptr = h;
+	size_t count = 0;
+	dlistint_t *ptr = h;
 
 	while (ptr != NULL)
 	{
