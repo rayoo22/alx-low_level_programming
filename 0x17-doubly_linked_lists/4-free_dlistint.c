@@ -3,7 +3,7 @@
  * free_dlistint - frees a doubly linked list
  * @head: pointer to the list to free
  */
-void free_dlistint(distint_t *head)
+void free_dlistint(dlistint_t *head)
 {
 	dlistint_t *temp;
 
@@ -11,6 +11,6 @@ void free_dlistint(distint_t *head)
 	{
 		temp = head->next;
 		free(head);
-		head = temp;
+		head = tempi;
 	}
 }
