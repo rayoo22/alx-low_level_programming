@@ -5,13 +5,12 @@
 #include <stdlib.h>
 #include <string.h>
 
-/*
- * struct hash_node_s - Node of a hash table
- *
+/**
+ * struct hash_node_s - Node of a hash table data structure
  * @key: The key, string
- * The key is unique in the HashTable
  * @value: The value corresponding to a key
  * @next: A pointer to the next node of the List
+ * Description: struct node for a hash table
  */
 typedef struct hash_node_s
 {
